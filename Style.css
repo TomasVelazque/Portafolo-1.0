@@ -1,0 +1,493 @@
+@import url('https://fonts.googpleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+body{
+    color: #ededed;
+    background: #081b29;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #081b29;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;   
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background: #081b29;
+}
+
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: .3s;
+}
+
+
+.navbar a:hover{
+    color: #00abf0; 
+}
+
+/* .navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}*/  
+
+.home{
+    height: 100vh;
+    align-items: center;
+    padding: 0 10%;
+    display: flex;
+}
+
+.home-content{
+    max-width: 700px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #00abf0;
+    text-align: left;
+}
+
+.home-content p{
+    font-size: 18px;
+    margin: 20PX 0 40px ;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;    
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;    
+}
+
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+
+
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;    
+    background: #081b29;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    color: #081b29;
+
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    background: #00abf0;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+
+/* SOBRE MI STYLE*/
+
+
+.sobremi{
+    height: 100vh;
+    align-items: center;
+    padding: 25px 10%; /* Ajusta el padding top para dejar espacio para el menú */
+    display: flex;
+    margin-top: 100px; /* Puedes ajustar este margen según sea necesario */
+    background: #081b29;
+}
+
+.sobremi-content{
+    max-width: 700px;
+    text-align: center;
+    display: flex; /* Utilizar flexbox para el diseño */
+    flex-direction: column; /* Apilar los elementos en columnas */
+    align-items: center; /* Centrar horizontalmente los elementos */
+    margin: auto; /* Centrar el contenido horizontalmente */
+    color: white;
+}
+
+.sobremi-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.sobremi-content h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.sobremi-content p{
+    font-size: 18px;
+    margin: 20PX 0 40px ;
+}
+
+
+/* ESTUDIOS STYLE*/
+
+.estudios{
+    align-items: center;
+    padding: 25px 10%; /* Ajusta el padding top para dejar espacio para el menú */
+    display: flex;
+    margin-top: 100px; /* Puedes ajustar este margen según sea necesario */
+    background: #081b29;
+}
+
+.estudios-content{
+    max-width: 700px;
+    text-align: center;
+    display: flex; /* Utilizar flexbox para el diseño */
+    flex-direction: column; /* Apilar los elementos en columnas */
+    align-items: center; /* Centrar horizontalmente los elementos */
+    margin: auto; /* Centrar el contenido horizontalmente */
+}
+
+.estudios-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.estudios-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.estudios-content p{
+    font-size: 16px;
+    margin: 20PX 0 40px ;
+}
+
+/* CONTACTO STYLE */
+
+.contacto{
+    align-items: center;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-content{
+    max-width: 700px;
+}
+
+.contacto-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.contacto-content h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.contacto-content p{
+    font-size: 16px;
+    margin: 20PX 0 40px ;
+    text-align: center;
+    justify-content: center;
+    color: #00abf0;
+}
+
+
+.contacto-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 250px;
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contacto-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.contacto-sci a:hover{
+    color: #081b29;
+
+}
+
+.contacto-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    background: #00abf0;
+}
+
+.contacto-sci a:hover::before{
+    width: 100%;
+}
+
+
+/* PROYECTOS ESTILO */
+
+
+
+#portafolio{
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+    text-align: center;
+}
+
+#porfolio ,h3{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #00abf0;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+#portafolio .fila {
+    display: flex;
+    justify-content: center; /* Cambiado para centrar los elementos */
+    flex-wrap: wrap; /* Permitir que los elementos salten a una nueva fila si es necesario */
+    gap: 20px; /* Añade un espacio uniforme entre los elementos */
+    margin: 30px 0;
+}
+
+#portafolio .fila .proyecto {
+    flex: 1 1 200px; /* Ajusta el ancho mínimo de cada proyecto a 200px, expandiéndose hasta llenar el espacio */
+    max-width: 300px; /* Ajusta el tamaño máximo de los proyectos */
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+
+#portafolio .fila .proyecto img{
+    width: 100%;
+    height: 100%;
+    ;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#portafolio .fila .proyecto:hover img{
+    filter: grayscale(0);
+}
+
+#portafolio .fila .proyecto .info{
+    position: absolute;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff5080;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#portafolio .fila .proyecto:hover .info{
+    opacity: 1;
+    bottom: 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form {
+    background-color: #081b21;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.form h4 {
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.controls:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.botons {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botons:hover {
+    background-color: #0056b3;
+}
+
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 70px; /* Tamaño del ícono */
+    color: #25D366; /* Color verde característico de WhatsApp */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.whatsapp-link:hover {
+    color: #128C7E; /* Cambia a un tono más oscuro cuando se pasa el ratón */
+}
