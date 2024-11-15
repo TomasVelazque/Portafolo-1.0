@@ -285,10 +285,17 @@ body{
     padding: 0 10%;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .contacto-content{
     max-width: 700px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 3px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .contacto-content h1{
@@ -431,19 +438,22 @@ body{
 }
 
 .form-container {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     height: 100%;
+    text-align: center;
 }
 
 .form {
     background-color: #081b21;
+    margin: 0 auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 400px;
 }
+
 
 .form h4 {
     text-align: center;
@@ -605,18 +615,25 @@ body{
         text-align: center;
     }
 
-    .contacto-content h3,
-    .contacto-content p {
+
+    .contacto-content p, h3 {
         text-align: center;
         font-size: 0.9rem; /* Ajustar tamaño del texto */
         padding: 0 10px;
+        margin-top: 50px;
     }
 
-    .form-container form {
+    .form-container .form {
         width: 100%; /* El formulario ocupa todo el espacio disponible */
         max-width: 300px;
         margin: 0 auto; /* Centrar formulario */
         padding: 10px;
+    }
+    
+
+    .botons {
+        font-size: 0.9rem;
+        padding: 8px;
     }
 
     .contacto-sci {
