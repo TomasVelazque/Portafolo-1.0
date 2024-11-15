@@ -494,6 +494,7 @@ body{
 
 /* Responsive para pantallas muy pequeñas (menos de 480px) */
 @media (max-width: 480px) {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
     .header {
         display: flex;
         flex-direction: column; /* Elementos uno debajo del otro */
@@ -597,8 +598,18 @@ body{
         gap: 10px;
     }
 
-    .whatsapp-link {
-        font-size: 20px; /* Ajustar el tamaño del ícono */
+    .contacto-sci a {
+        width: 45px; /* Tamaño más pequeño para los iconos en responsive */
+        height: 45px;
+        line-height: 45px;
+        font-size: 29px;
+    }
+
+    .social-icons a.whatsapp {
+        width: 35px; /* Tamaño ligeramente mayor solo para el ícono de WhatsApp */
+        height: 35px;
+        line-height: 35px;
+        font-size: 19px;
     }
 
     footer {
