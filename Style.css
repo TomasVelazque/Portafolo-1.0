@@ -566,16 +566,39 @@ body{
         height: auto;
     }
 
+     /* Título "Mis Proyectos" */
+     #portafolio h3 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
+        text-align: center; /* Centra el texto */
+        margin-top: 15px; /* Agrega espacio superior */
+        margin-bottom: 20px; /* Espacio inferior para separar de los proyectos */
+    }
+
+    /* Contenedor de proyectos */
     .fila {
         display: flex;
         flex-wrap: wrap;
         gap: 10px; /* Espaciado entre proyectos */
         justify-content: center;
+        padding: 0 10px; /* Agrega padding lateral */
     }
 
+    /* Estilo para cada cuadro de proyecto */
     .proyecto {
         width: 100%; /* Cada proyecto ocupa todo el ancho */
-        max-width: 250px; /* Máximo ancho para mantener formato */
+        max-width: 200px; /* Limita el tamaño máximo para formato */
+        margin-bottom: 15px; /* Espacio inferior entre proyectos */
+    }
+
+    /* Ajustes en el texto dentro de los cuadros de proyecto */
+    .info h4 {
+        font-size: 1rem; /* Tamaño de título del proyecto */
+        text-align: center;
+    }
+
+    .info p {
+        font-size: 0.8rem; /* Tamaño del subtítulo */
+        text-align: center;
     }
 
     .contacto-content h3,
