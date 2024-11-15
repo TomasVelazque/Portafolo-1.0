@@ -567,6 +567,10 @@ body{
     }
 
      /* Título "Mis Proyectos" */
+
+     #portafolio{
+        margin-top: 350px;
+     }
      #portafolio h3 {
         font-size: 1.5rem; /* Ajusta el tamaño del título */
         text-align: center; /* Centra el texto */
