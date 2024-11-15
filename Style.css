@@ -274,7 +274,7 @@ body{
 }
 
 .estudios-content p{
-    font-size: 16px;
+    font-size: 18px;
     margin: 20PX 0 40px ;
 }
 
@@ -305,7 +305,7 @@ body{
 }
 
 .contacto-content p{
-    font-size: 16px;
+    font-size: 18px;
     margin: 20PX 0 40px ;
     text-align: center;
     justify-content: center;
@@ -490,4 +490,87 @@ body{
 
 .whatsapp-link:hover {
     color: #128C7E; /* Cambia a un tono más oscuro cuando se pasa el ratón */
+}
+
+/* Responsive para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Menú en una columna */
+        align-items: center;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Espaciado entre los enlaces */
+    }
+
+    .home-content {
+        text-align: center;
+    }
+
+    .home-content h1, .home-content h3, .home-content p {
+        padding: 0 15px; /* Espaciado interno para móviles */
+    }
+
+    .home-content .btn-box {
+        flex-direction: column; /* Botones uno debajo del otro */
+        align-items: center;
+    }
+
+    .btn-box a {
+        margin-bottom: 10px;
+    }
+
+    section img {
+        width: 100%; /* Imagenes adaptadas al contenedor */
+        max-width: 500px;
+        height: auto;
+    }
+
+    .sobremi-content img,
+    .estudios-content img {
+        width: 100%; /* Imagenes que respetan el ancho del contenedor */
+        height: auto;
+    }
+
+    .fila {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px; /* Espaciado entre proyectos */
+        justify-content: center;
+    }
+
+    .proyecto {
+        width: 100%; /* Cada proyecto ocupa todo el ancho */
+        max-width: 300px; /* Máximo ancho para mantener formato */
+    }
+
+    .contacto-content h3,
+    .contacto-content p {
+        text-align: center;
+        padding: 0 15px; /* Espaciado en móviles */
+    }
+
+    .form-container form {
+        width: 100%; /* El formulario ocupa todo el espacio disponible */
+        max-width: 400px;
+        margin: 0 auto; /* Centrar formulario */
+    }
+
+    .contacto-sci {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .whatsapp-link {
+        font-size: 24px; /* Ajustar el tamaño del ícono */
+    }
+
+    footer {
+        font-size: 14px; /* Texto más pequeño en footer */
+        padding: 15px;
+    }
 }
